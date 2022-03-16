@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('CD') {
       steps {
-        azureWebAppPublish(appName: 'sample-web-application-01', resourceGroup: 'BlueOcean', azureCredentialsId: '160e6f2f-dd4a-469a-bae9-a0fa3d45e291')
+        azureWebAppPublish(appName: 'sample-web-application-01', resourceGroup: 'BlueOcean', azureCredentialsId: '/subscriptions/32b57df5-5519-46b0-ab78-9b78e94fd4c8/resourceGroups/BlueOcean')
       }
     }
 
